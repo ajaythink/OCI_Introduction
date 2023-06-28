@@ -1,0 +1,6 @@
+1. You have subscribed to an OCI region that has one availability domain. You want to deploy a highly available application with two servers and a 2-node database. How would you place the components to maintain the high availability of the application?
+Place the servers in one fault domain and the database nodes in another fault domain.
+High availability is not possible as there is only one availability domain in the region.
+Place all the components in the same fault domain.
+Place one server and a DB node in one fault domain, and the second server and DB node in another fault domain. (*)
+Correct. In this scenario, distributing the servers and database nodes across different fault domains within the same availability domain would provide protection against the failure of a single fault domain. If one fault domain experiences a failure, the other would remain unaffected, ensuring the high availability of the application.
